@@ -35,21 +35,23 @@ const Layout = ({ children }) => {
               <div className="bg-primary-600 p-2 rounded-lg">
                 <Activity className="h-6 w-6 text-white" />
               </div>
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">Integration Hub</h1>
-                <p className="text-xs text-gray-500">APIs + Webhooks Viewer</p>
+              <div className="flex items-center space-x-3">
+                <div>
+                  <h1 className="text-xl font-bold text-gray-900">Integration Hub</h1>
+                  <p className="text-xs text-gray-500">APIs + Webhooks Viewer</p>
+                </div>
+                <a
+                  href="https://integrations-and-webhooks.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-1 px-3 py-1.5 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-xs font-medium"
+                >
+                  <span>Live Demo</span>
+                  <ExternalLink className="h-3 w-3" />
+                </a>
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <a
-                href="https://integrations-and-webhooks.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium"
-              >
-                <span>Live Demo</span>
-                <ExternalLink className="h-4 w-4" />
-              </a>
               <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center">
                 <span className="text-primary-700 text-sm font-medium">U</span>
               </div>
