@@ -4,7 +4,8 @@ import {
   Plug, 
   Webhook, 
   Bug,
-  Activity
+  Activity,
+  ExternalLink
 } from 'lucide-react'
 
 const Layout = ({ children }) => {
@@ -40,6 +41,15 @@ const Layout = ({ children }) => {
               </div>
             </div>
             <div className="flex items-center space-x-4">
+              <a
+                href="https://integrations-and-webhooks.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium"
+              >
+                <span>Live Demo</span>
+                <ExternalLink className="h-4 w-4" />
+              </a>
               <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center">
                 <span className="text-primary-700 text-sm font-medium">U</span>
               </div>
